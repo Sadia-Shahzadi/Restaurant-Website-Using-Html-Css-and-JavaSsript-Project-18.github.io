@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://cdn.pixabay.com/photo/2020/05/07/23/14/pizza-5143514__340.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.top-navbar{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.icons i{
+    color: white;
+    font-size: 20px;
+    padding: 0 5px;
+}
+.icons i:hover{
+    color: red;
+}
+.btn{
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    padding: 5px 30px;
+    outline: none;
+}
+.btn:hover{
+    background-color: darkred;
+    border: 2px solid darkred;
+    transition: .5s;
+}
+nav{
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 7%;
+}
+nav ul li{
+    display: inline-block;
+    padding: 12px 15px;
+}
+nav ul li a{
+    color: white;
+}
+nav ul li a:hover{
+    color: red;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    padding: 1px;
+    display: block;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    background-color: darkred;
+    transition: .5s;
+}
+.text{
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+}
+.container{
+    overflow: hidden;
+    text-align: center;
+}
+.container .texts{
+    font-size: 4.9rem;
+    color: white;
+    padding-right: 15px;
+}
+.container .text{
+    color: red;
+    position: relative;
+    font-size: 4.9rem;
+    font-weight: 600;
+}
+.text p{
+    line-height: 1.8;
+    padding-bottom: 90px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.button .btn{
+    margin: 0 34px;
+}
+.btn1{
+    background-color: darkred;
+    border: 2px solid darkred;
+}
+.btn1:hover{
+    background: transparent;
+    transition: .5s;
+    border: 2px solid white;
+}
+.imgs{
+    margin-top: 120px;
+    text-align: center;
+    cursor: pointer;
+}
+.imgs img{
+    border-bottom: 2px solid darkred;
+    padding: 15px 15px;
+    border-radius: 50%;
+}
+.imgs img:hover{
+    transform: rotate(360deg);
+    transition: 5s;
+}
+
+/* ingredients section  */
+
+.tier-list{
+    background-color: rgb(243, 235, 235);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+}
+.p1{
+    padding: 10% 0;
+    margin-left: 90px;
+}
+.p2{
+    padding: 20% 0;
+    margin-left: 90px;
+}
+.p1 img, .p2 img{
+    border-radius: 50%;
+    border: 4px solid darkred;
+    padding: 5px 5px;
+}
+.p1 img:hover, .p2 img:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+.p1 h1, .p2 h1{
+    padding: 20px 0;
+    color: red;
+    font-size: 30px;
+}
+.p1 p, .p2 p{
+    color: grey;
+    line-height: 1.9;
+    font-size: 15px;
+    padding-right: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* Collect Section */
+.details{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.77)),url(img/bc2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    padding-top: 5%;
+
+}
+.head{
+    padding-top: 2px;
+    padding-left: 90px;
+}
+.head h1{
+    font-size: 5em;
+    line-height: 1.2;
+}
+.head p{
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.t1{
+    padding-top: 6%;
+    margin: 0 30px;
+}
+.t1 i{
+    background-color: darkred;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 10px 10px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    margin: 0 40px;
+    color: white;
+    font-size: 70px;
+}
+.t1 i:hover{
+    transform: rotate(50deg);
+    transition: .5s;
+}
+.t1 h1{
+    color: white;
+    font-size: 25px;
+    padding-top: 40px;
+}
+.t1 h1:hover{
+    color: red;
+}
+.bttn i{
+    background-color: transparent;
+    font-size: 13px;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 30px;
+    border: none;
+}
+.bttn i:hover{
+    transform: none;
+}
+.bttn a{
+    color: white;
+    font-size: 14px;
+    border: 2px solid white;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 10px 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.bttn a:hover{
+    background-color: red;
+    border: 2px solid red;
+}
+
+/* choose section  */
+.choose{
+    background-color: grey;
+    width: 100%;
+    height: 175vh;
+    text-align: center;
+    padding-top: 8%;
+}
+.choose h2{
+    color: darkred;
+    padding-bottom: 10px;
+}
+.choose h1{
+    font-size: 3em;
+}
+.choose p{
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 40px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    color: rgb(224, 221, 221);
+}
+.choose .btn{
+    background-color: darkred;
+    margin-bottom: 0px;
+}
+.list{
+    display: flex;
+}
+.list .p1{
+    padding: 5px 0;
+    margin-right: -52px;
+    margin-left: 0;
+}
+.list .p2{
+    padding: 90px 0;
+    margin-left: 0;
+}
+.list .p1 img, .list .p2 img{
+    transform: scale(0.8);
+    border: none;
+    padding: 0;
+}
+.list .p1 img:hover, .list .p2 img:hover{
+    transform: scale(0.7);
+    transition: .5s;
+}
+.list .p1 h1, .list .p2 h1{
+    padding: 0;
+    color: white;
+    font-size: 30px;
+}
+.list i{
+    font-size: 40px;
+    color: white;
+}
+
+/* deals section  */
+
+.deals{
+    background-color: rgba(185, 180, 180);
+    padding-top: 5%;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.heading h1{
+    font-size: 30px;
+    transform: scale(1.7);
+    padding-left: 34px;
+}
+.l-img img{
+    margin: 40px 90px;
+    border: 2px solid darkred;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.l-img img:hover{
+    transform: scale(0.9);
+    transition: .5s;
+}
+.b-img{
+    display: flex;
+}
+.b-img img{
+    margin-left: 70px;
+    margin-right: 0;
+    margin-bottom: 5%;
+    margin-top: 0;
+    border: 4px solid darkred;
+    padding: 8px 8px;
+    border-radius: 10px;
+    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+.location .choose{
+    background-color: aliceblue;
+}
+.location .choose p{
+    color: #a4b0be;
+}
+.flex-loc{
+    display: flex;
+    margin: 6% 3em;
+}
+.l1{
+    padding: 0 62px;
+}
+.l1 h2{
+    font-size: 40px;
+}
+.l1 h5{
+    line-height: 1.9;
+    color: #1289A7;
+}
+.l1 span{
+    color: #6e7580;
+}
+.flex-l2{
+    display: flex;
+}
+.l2{
+    margin-top: 6%;
+    text-align: left;
+}
+.l2 h3{
+    color: red;
+    padding: 10px 30px;
+}
+.l2 h1{
+    padding-left: 40px;
+    font-size: 50px;
+    color: darkred;
+}
+.location .l2 p{
+    color: black;
+    font-weight: 300;
+    line-height: 1.9;
+    padding-left: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.location .btn{
+    margin-left: 35px;
+}
+
+/* Gallery Section  */
+
+.filter-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0;
+}
+.filter-gallery h1{
+    padding-bottom: 50px;
+    font-size: 3em;
+    color: darkred;
+}
+.filter-options{
+    display: flex;
+    margin-bottom: 30px;
+}
+.filter-option{
+    padding: 10px 20px;
+    border: 2px solid darkred;
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.filter-option.active, .filter-option:hover{
+    background-color: darkred;
+    color: white;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 0;
+}
+.gallery-item{
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.gallery-item img{
+    width: 100%;
+    border: 4px solid darkred;
+    padding: 5px 5px;
+    margin-left: 10px;
+}
+.gallery-item img:hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+.pizza img{
+    height: 33vh;
+}
+
+
+/* Contact Section  */
+.bc{
+    background-color: #6e7580;
+    height: 114vh;
+    padding-top: 3%;
+}
+.l3{
+    padding-left: 60px;
+}
+.l3 h2{
+    padding-left: 40px;
+    padding-top: 120px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 4rem;
+}
+.l3 h1{
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+.l3 p{
+    padding-left: 40px;
+    font-size: 15px;
+    color: white;
+    line-height: 2.0;
+    padding-bottom: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.l3 img{
+    padding-left: 40px;
+}
+
+.app-image img{
+    margin-left: 12em;
+    height: 100vh;
+    transform: scale(0.9);
+}
+
+/* Footer Section  */
+.footer{
+    display: flex;
+    background-color: aliceblue;
+    padding-top: 5%;
+}
+.d1{
+    padding: 80px 30px;
+    margin-left: 40px;
+}
+.d1 p{
+    padding: 30px 0;
+    font-weight: 100;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+    color: rgb(185, 179, 179);
+}
+.d1 .icons i{
+    font-size: 40px;
+    color: black;
+}
+.d1 .icons i:hover{
+    color: red;
+}
+.d1 h1{
+    color: darkred;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.d1 a{
+    display: flex;
+    line-height: 1.8;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+.d1 a:hover{
+    color: red;
+    transition: .5s;
+}
+.copyright{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: red;
+    height: 80px;
+    border-top: 2px solid white;
+    padding: 40px 0;
+}
+.copyright h1{
+    font-size: 19px;
+    color: white;
+}
